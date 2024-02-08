@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import woodburn from './Assets/woodburn.jpeg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+export default function Example() {
+  const myStyle = {
+    backgroundImage: `url(${woodburn})`,
+    height: "100vh",
+    marginTop: "0px",
+    fontSize: "50px",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+};
+  return (
+    <div style={myStyle}>
+    <h1 className='text-center text-white'>Deadnettle Design</h1>
+      {/* <img src={woodburn} className='min-w-full' /> */}
+    </div>
+  )
+}
