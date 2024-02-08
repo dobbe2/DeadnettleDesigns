@@ -1,5 +1,5 @@
-import woodburn from './Assets/woodburn.jpeg';
-import './App.css';
+import woodburn from './images/woodburn.jpeg';
+import './styles/index.css';
 
 
 export default function Example() {
