@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from 'react'
 import LogoText from '../images/logoText.jpg'
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
             </h1>
           </div>
           <img
-            className='w-full max-h-[500px] object-cover'
+            className='object-cover w-full'
             src={LogoText}
             alt='/'
           />

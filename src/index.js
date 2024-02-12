@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import App from './App';
 import Navbar from './components/nav-bar'
 import Hero from './components/hero';
+import ProductGrid from './components/product-grid'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +11,7 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <Hero />
+    <ProductGrid />
   </React.StrictMode>
 );
 
