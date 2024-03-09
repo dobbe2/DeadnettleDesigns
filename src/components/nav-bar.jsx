@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import DeadnettleIcon from '../images/deadnettle-icon-edited.png'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Products', href: '#' },
+  { name: 'Blog', href: '#' },
+  { name: 'About', href: '#' },
 ]
 
 export default function Example() {
@@ -14,10 +14,10 @@ export default function Example() {
 
   return (
     <header className="bg-amber-200">
-      <nav className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8" aria-label="Global">
+      <nav className="flex items-center justify-between p-4 mx-auto max-w-7xl lg:px-8" aria-label="Global">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">Deadnettle Designs</span>
-          <img className="w-auto h-8" src="https://tailwindui.com/img/logos/mark.svg?color=rose&shade=400" alt="" />
+          <img className="w-auto h-24" src={DeadnettleIcon} alt="" />
         </a>
         <div className="flex lg:hidden">
           <button
@@ -35,9 +35,9 @@ export default function Example() {
               {item.name}
             </a>
           ))}
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          </a> */}
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -47,8 +47,8 @@ export default function Example() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Deadnettle Designs</span>
               <img
-                className="w-auto h-8"
-                src="https://tailwindui.com/img/logos/mark.svg?color=rose&shade=400"
+                className="w-auto h-24"
+                src={DeadnettleIcon}
                 alt=""
               />
             </a>
